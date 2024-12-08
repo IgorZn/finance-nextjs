@@ -7,13 +7,6 @@ export default function Home() {
 	useEffect(() => {
 		setLoading(false)
 	}, [])
-	return (
-		<>
-			{!loading && <h1>Welcome back!</h1>}
-			<SignedIn>
-				{/* Mount the UserButton component */}
-				<UserButton />
-			</SignedIn>
-		</>
-	)
+
+	return <>{!loading && <h1>Welcome back!</h1>}</>
 }
